@@ -13,4 +13,26 @@
 
 Enjoy!
 
+# Development
+
+You'll find the content of the index page inside at this relative path `nodejs-empty-app/sk_project/views/frontend/view.js`.
+
+To add a comnponent inside the view, just type `this.add.<component>()`, and replace the `<component>` with a valid SK component name (continue reading below).
+
+You can find all available stock components in this relative path: `nodejs-empty-app/superkraft/ui/frontend/core/`.
+
+## Examples
+
+### Adding a button with a text and and a checkmark icon and an on-click event
+```javascript
+this.add.button(_c => {
+    _c.text = 'My button'
+    _c.icon = 'checkmark'
+
+    _c.onClick = ()=>{
+        alert('Clicked!')
+    }
+})
+```
+
 
