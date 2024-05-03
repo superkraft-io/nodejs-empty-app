@@ -1,0 +1,35 @@
+{
+    "isWhat": {
+        "env": "dev",
+        "beta": true
+    },
+
+    "webserver": {
+        "ports" : {"http": 80, "https": 443},
+        "host"  : "http://localhost:8085"
+    },
+
+    "database": {
+	    "direct": false,
+
+        "endpoints": {
+            "auth": {
+                "host"   : "http://127.0.0.1:8090",
+                "keysec" : {"key": "", "sec": "" }
+            },
+
+            "site": {
+                "host"   : "http://127.0.0.1:8091",
+                "keysec" : {"key": "", "sec": "" }
+            }
+        }
+    },
+
+ 
+
+    "cert": {
+        "ca": "/sai/cert/site/ksp.ca-bundle",
+        "cert": "/sai/cert/site/ksp.crt",
+        "key": "/sai/cert/site/ksp.key"
+    }
+}
