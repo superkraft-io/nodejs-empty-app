@@ -9,5 +9,8 @@
 - Navigate back to app repo: `cd ..`
 - Install packages: `npm install`
 - Run app: `node app.js`
+- Open browser and visit `localhost:80`
+
+Enjoy!
 
 
