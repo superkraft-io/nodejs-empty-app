@@ -1,0 +1,3 @@
+This "sk_ui" folder contains UI components that can be used only by this current views.
+
+These UI components can NOT be accessed globally from other views.

@@ -1,0 +1,7 @@
+.sk_ui_myGlobalComponent {
+    background-color: blue;
+    color: black;
+    min-width: 256px;
+    min-height: 80px;
+    padding: 16px;
+}

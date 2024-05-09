@@ -1,0 +1,5 @@
+This "sk_ui" folder contains UI components that can be used globally across all views.
+
+The reason these UI components can be accessed globally across all views is because we are currently inside "<project root>/sk_globalFrontend/frontend/sk_ui".
+
+Practically works the same as "<project root>/sk_project/frontent/sk_ui".

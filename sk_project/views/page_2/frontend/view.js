@@ -112,47 +112,5 @@ class SK_App_View extends sk_ui_component {
             _c.wrap = true
             _c.value = 'This is a multi-line:able text area to allow for multi-line text input'
         })
-
-        this.add.myViewComponent()
-
-        this.add.myGlobalComponent()
-
-        this.add.simpleActionBtn(_c => {
-            _c.text = 'Test an action of this view'
-            _c.onClick = async ()=>{
-                var res = await sk.actions.index_test_action({myData: "This is a string"})
-                alert("Action response from backend: " + res.responseData)
-            }
-        })
-
-        this.add.simpleActionBtn(_c => {
-            _c.text = 'Test a global action'
-            _c.onClick = async ()=>{
-                var res = await sk.actions.global_test_action({myData: "Hello backend!"})
-                alert("Action response from backend: " + res.responseData)
-            }
-        })
-
-        this.add.simpleActionBtn(_c => {
-            _c.text = 'Test the POST request "test_post"'
-
-            _c.onClick = async ()=>{
-                var opt = {
-                    cmd: 'test_post',
-                    data: {
-                        someDataToInclude: 'This is a string'
-                    },
-                    //files: ..., //more about this in the future
-                }
-
-                
-                try {
-                    var res = await sk_communicator.send(opt)
-                    alert('All OK!')
-                } catch(err) {
-                    alert('POST failed!')
-                }
-            }
-        })
     }
 }

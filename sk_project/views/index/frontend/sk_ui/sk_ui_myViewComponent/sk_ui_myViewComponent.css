@@ -1,0 +1,7 @@
+.sk_ui_myViewComponent {
+    background-color: red;
+    color: black;
+    min-width: 256px;
+    min-height: 80px;
+    padding: 16px;
+}
