@@ -28,8 +28,8 @@
  
 
     "cert": {
-        "ca": "/sai/cert/site/ksp.ca-bundle",
-        "cert": "/sai/cert/site/ksp.crt",
-        "key": "/sai/cert/site/ksp.key"
+        "ca": "/myApp/cert/site/ksp.ca-bundle",
+        "cert": "/myApp/cert/site/ksp.crt",
+        "key": "/myApp/cert/site/ksp.key"
     }
 }

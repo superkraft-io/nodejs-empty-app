@@ -2,7 +2,7 @@ global.fs = require('fs')
 var __superkraft = require(__dirname + '/superkraft/sk_superkraft.js')
 
 
-global.sai = {
+global.myApp = {
 }
 
 
@@ -18,8 +18,8 @@ var opt = {
 
     config: __dirname + '/config.json', //won't work in SSC
 
-    database : sai.database,
-    auth     : sai.auth,
+    database : myApp.database,
+    auth     : myApp.auth,
 
     l10n     : new (require(__dirname + '/modules/l10n/l10n.js'))(),
 
