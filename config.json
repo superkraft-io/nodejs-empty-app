@@ -1,6 +1,6 @@
 {
     "isWhat": {
-        "env": "dev",
+        "env": "live",
         "beta": true
     },
 
@@ -28,8 +28,8 @@
  
 
     "cert": {
-        "ca": "/myApp/cert/site/ksp.ca-bundle",
-        "cert": "/myApp/cert/site/ksp.crt",
-        "key": "/myApp/cert/site/ksp.key"
+        "ca": "./cert/localhost/localhost.ca-bundle",
+        "cert": "./cert/localhost/localhost.crt",
+        "key": "./cert/localhost/localhost.key"
     }
 }
