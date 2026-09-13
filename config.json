@@ -31,5 +31,24 @@
         "ca": "./cert/localhost/localhost.ca-bundle",
         "cert": "./cert/localhost/localhost.crt",
         "key": "./cert/localhost/localhost.key"
+    },
+
+    "cdn": {
+        "paths": {
+            "local": "/",
+            "public": "/"
+        },
+
+        "routes": {
+            "dev": "/",
+            "live": ""
+        },
+
+        "targets": {
+            "site"     : "local",
+            "utils"    : "local",
+            "products" : "local",
+            "studio"   : "local"
+        }
     }
 }
